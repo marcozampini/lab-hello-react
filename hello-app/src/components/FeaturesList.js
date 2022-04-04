@@ -7,23 +7,27 @@ import icon4 from '../images/icon4.png'
 
 const features = [
   {
+    featureId: 'feature-1',
     featureTitle: 'Declarative',
     featureDescription: 'React makes it painless to create interactive UIs.',
     featureIcon: icon1,
   },
   {
+    featureId: 'feature-2',
     featureTitle: 'Components',
     featureDescription:
       'Build encapsulated components that manage their state.',
     featureIcon: icon2,
   },
   {
+    featureId: 'feature-3',
     featureTitle: 'Single-Way',
     featureDescription:
       "A set of immutable values are passed to the component's.",
     featureIcon: icon3,
   },
   {
+    featureId: 'feature-4',
     featureTitle: 'JSX',
     featureDescription: 'Statically-typed, designed to run on modern browsers.',
     featureIcon: icon4,
@@ -36,7 +40,7 @@ const FeaturesList = () => (
       // some comment here
       return (
         <FeatureItem
-          key={index}
+          key={feature.featureId}
           featureTitle={feature.featureTitle}
           featureDescription={feature.featureDescription}
           featureIcon={feature.featureIcon}
